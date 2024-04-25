@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 2 Story</title>
+	<link rel="stylesheet" href="../../css/Style.css">
+</head>
+<body>
+    <script>var myText = "the ligHts flickered on, revealing a small room wiTh a locked door. on the wall was a Message that read, 'find the key to escape'. you searched the room and found a cLue hidden in a painting which stated 'the key is hidden inside a SCRIPT ' .";
+    
+        i = 0,
+        
+        myButton = document.querySelector('button');
+    
+    onload = function () {
+        
+        'use strict';
+        
+        var typeWriter = setInterval(function () {
+            
+            document.getElementById('type').textContent += myText[i];
+            
+            i = i + 1;
+            
+            if (i > myText.length - 1) {
+                
+                clearInterval(typeWriter);
+                
+            }
+            
+        }, 50);
+        
+    };</script>
+    <h1>Chapter 2 : The First Game</h1><br>
+    <code id="type"></code><br>
+    <form action="../Free To Play Riddle/Rid2.php"><button type="submit" id="button">Next</button></form>
+</body>
+</html>

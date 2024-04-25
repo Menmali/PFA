@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 4 Story</title>
+	<link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+    <script>var myText = "As you Walked Into The room After you barely escaped the room in time , You Heared a voice congratulating you for passing the previous puzzles and surviving. Everything went silent for a bit but suddenly The voice Emerges again 'This Will be a tough challenge but if you pass it you'll be one step closer to Freedom, Pay attention to the Details and look for clues hidden'.";
+    
+        i = 0,
+        
+        myButton = document.querySelector('button');
+    
+    onload = function () {
+        
+        'use strict';
+        
+        var typeWriter = setInterval(function () {
+            
+            document.getElementById('type').textContent += myText[i];
+            
+            i = i + 1;
+            
+            if (i > myText.length - 1) {
+                
+                clearInterval(typeWriter);
+                
+            }
+            
+        }, 50);
+        
+    };</script>
+    <h1>Chapter 4 : Reaching The End </h1><br>
+    <code id="type"></code><br>
+    <form action="../Riddles/Rid4.php"><button type="submit" id="button">Next</button></form>
+</body>
+</html>

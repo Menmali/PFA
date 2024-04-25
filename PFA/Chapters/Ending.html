@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Ending</title>
+	<link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+    <script>
+        var myText = "After bursting through the door You looked around and saw that you was outside. You had escaped the survival escape room, and you knew you was stronger than you thought, and you could overcome any obstacle if you put your mind to it BUT As you Looked Down, you saw a Letter which stated that Someone you know Betrayed you and got you into this Escape Room. You vowed to find that person and bring them to justice. And with a new sense of purpose and determination you was ready to take on anything that came your way.";
+        var i = 0;
+        var button = document.getElementById('button');
+
+        onload = function () {
+            'use strict';
+            var typeWriter = setInterval(function () {
+                document.getElementById('type').textContent += myText[i];
+                i = i + 1;
+                if (i > myText.length - 1) {
+                    clearInterval(typeWriter);
+                }
+            }, 50);
+        };
+    </script>
+    <h1> The Ending : Freedom</h1><br>
+    <code id="type"></code><br>
+    <form action="../Full Story/Revenge Coming Soon/Revenge.php"><button type="submit" id="button">Next</button></form>
+</body>
+</html>

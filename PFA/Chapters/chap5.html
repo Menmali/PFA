@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 5 Story</title>
+	<link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+    <script>var myText = "You had reached the final room, where you had to face your biggest challenge yet. The room was filled with traps and obstacles, and you had to navigate through them all to reach the exit. you only had to make it through the final obstacle and Earn your Freedom.";
+    
+        i = 0,
+        
+        myButton = document.querySelector('button');
+    
+    onload = function () {
+        
+        'use strict';
+        
+        var typeWriter = setInterval(function () {
+            
+            document.getElementById('type').textContent += myText[i];
+            
+            i = i + 1;
+            
+            if (i > myText.length - 1) {
+                
+                clearInterval(typeWriter);
+
+                
+            }
+            
+        }, 50);
+        
+    };</script>
+    <h1>Chapter 5 : Final Obstacle </h1><br>
+    <code id="type"></code><br>
+    <form action="../Riddles/Rid5.php"><button type="submit" id="button">Next</button></form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 1 Story</title>
+	<link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+    <script>var myText = "You woke up in a dark room, your head throbbing from the blow you received when you were ambushed on the street. You tried to move your hands, but they were tied behind your back. A voice boomed from the darkness, 'Welcome to the survival escape room. You have to Solve The Riddles in Order To Escape.";
+    
+        i = 0,
+        
+        myButton = document.querySelector('button');
+    
+    onload = function () {
+        
+        'use strict';
+        
+        var typeWriter = setInterval(function () {
+            
+            document.getElementById('type').textContent += myText[i];
+            
+            i = i + 1;
+            
+            if (i > myText.length - 1) {
+                
+                clearInterval(typeWriter);
+                
+            }
+            
+        }, 50);
+        
+    };</script>
+    <h1>Chapter 1 : Captured </h1><br>
+    <code id="type"></code><br>
+    
+    <form action="../Riddles/Rid1.php"><button type="submit" id="button">Next</button></form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 3 Story</title>
+	<link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+    <script>var myText = "As You opened the door, You were met with a series of challenges that required you to solve puzzles to advance. You will have to use your wits to figure out the right combination of buttons to press in Order to escape the room in time.";
+    
+        i = 0,
+        
+        myButton = document.querySelector('button');
+    
+    onload = function () {
+        
+        'use strict';
+        
+        var typeWriter = setInterval(function () {
+            
+            document.getElementById('type').textContent += myText[i];
+            
+            i = i + 1;
+            
+            if (i > myText.length - 1) {
+                
+                clearInterval(typeWriter);
+                
+            }
+            
+        }, 50);
+        
+    };</script>
+    <h1>Chapter 3 : The Second Game </h1><br>
+    <code id="type"></code><br>
+    <form action="../Riddles/Rid3.php"><button type="submit" id="button">Next</button></form>
+</body>
+</html>

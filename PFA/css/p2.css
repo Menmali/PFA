@@ -1,0 +1,241 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #2d414a, #203A43, #0F2027); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+header{
+  width: 100%;
+  background: linear-gradient(#762727, #701b1b);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+}
+header h1{
+  color: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke: 0.5px #fff;
+}
+
+header a{
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none ;
+  text-align: left;
+}
+
+header a:hover{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  -webkit-text-stroke: 0.5px #fff;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 3em;
+  margin-bottom: 0;
+}
+
+nav a {
+  color: black;
+  opacity: 1;
+  position: relative;
+}
+
+.container{
+ margin-top: 5%;
+ background: linear-gradient(45deg, #67707F, #4C5463);
+ display: flex;
+ width: 650px;
+ height: 500px;
+ box-shadow: 0px 7px 10px black;
+}
+.column-left{
+ flex: 1;
+ display: flex;
+ flex-direction: column; 
+ justify-content: space-between; 
+ padding: 20px;
+}
+.everlane h2{
+  color: #F69970;
+  font-size: 0.8rem;
+}
+.everlane h1{
+  color: whitesmoke;
+  font-size: 1.5rem
+}
+.order{
+  border-top: 0.5px solid #BEBFC4;
+}
+.order h2{
+  color: #BEBFC4;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  font-weight: 900;
+}
+.order h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: 0 5px 15px black;
+  margin-top: 5px;
+}
+.column-right{
+  flex: 2;
+  position: relative;
+}
+.image img{
+  width: 180px;
+  height: 100px;
+}
+.card{
+  width: 500px;
+  height: 330px;
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  display: flex;
+   box-shadow: 0px 5px 10px black;
+}
+.checkbox-container{
+  position: absolute;
+  bottom: 35px;
+  font-size: 0.9rem;
+  color: #BEBFC4;
+  
+}
+.card-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px 20px;
+}
+.search input{
+  border: none;
+  font-variant: small-caps; 
+}
+.search .fa-search{
+  color: #BEBFC4;
+  width: 20px;
+}
+.stars{
+  color: orange;
+  padding-left: 20px;
+}
+.reviews{
+  text-decoration: none;
+  color: #BEBFC4;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.card-right{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 10px 15px 30px 5px; 
+}
+.data{
+ display: flex;
+ flex-direction: column;
+}
+.data label{
+  color: #BEBFC4;
+  font-size: 0.8rem;
+  padding: 8px 0px;
+}
+.name{
+  border-bottom: 0.5px solid grey;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #4C5463;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.card-number{
+  border-bottom: 0.5px solid grey;
+  border-top: none;
+  border-right: none;
+  border-left: none; 
+  color: #4C5463;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.month{
+  border-bottom: 0.5px solid grey;
+  border-top: none;
+  border-right: none;
+  border-left: none; 
+  color: #4C5463;
+  font-weight: 700;
+  letter-spacing: 0.1rem; 
+}
+.year{
+  border-bottom: 0.5px solid grey;
+  border-top: none;
+  border-right: none;
+  border-left: none; 
+  color: #4C5463;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.cvv{
+  border-bottom: 0.5px solid grey;
+  border-top: none;
+  border-right: none;
+  border-left: none; 
+  color: #4C5463;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.logo{
+  display: flex;
+  justify-content: flex-end;
+}
+.data button{
+    text-decoration: none;
+    padding: 20px;
+    margin: 35px;
+    background-color: #F5986F;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 3px 4px 20px #F5986F;
+    border: none;
+    margin-top: 10px;
+    color: #704332;
+}
+.data button:hover{
+  text-decoration: none;
+  font-size: 18px;
+}
+.data input{
+  margin-bottom: 30px;
+}
+.success{
+  color: green;
+  font-weight: 700;
+
+}
+.error{
+  color: red;
+  font-size:18px;
+  font-weight: 700;
+}
